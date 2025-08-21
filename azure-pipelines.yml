@@ -21,6 +21,7 @@ steps:
     provider: 'azurerm'
     command: 'init'
     backendServiceArm: 'Sutradhar-Serviceconnection'
+    backendAzureRmOverrideSubscriptionID: '6e2d972f-0c29-493d-bc26-2eaa32b9e4b9'
     backendAzureRmResourceGroupName: 'rg-saumya1'
     backendAzureRmStorageAccountName: 'stgsaumyabackup1'
     backendAzureRmContainerName: 'saumyabackupcontain'
