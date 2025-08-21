@@ -16,3 +16,12 @@ steps:
     customCommand: 'fmt'
     environmentServiceNameAzureRM: 'Sutradhar-Serviceconnection'
     environmentAzureRmOverrideSubscriptionID: '6e2d972f-0c29-493d-bc26-2eaa32b9e4b9'
+- task: TerraformTask@5
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    backendServiceArm: 'Sutradhar-Serviceconnection'
+    backendAzureRmResourceGroupName: 'rg-saumya1'
+    backendAzureRmStorageAccountName: 'stgsaumyabackup1'
+    backendAzureRmContainerName: 'saumyabackupcontain'
+    backendAzureRmKey: 'GitnPipeline-pr22.terraform.tfstate'
