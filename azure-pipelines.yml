@@ -13,7 +13,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/1/s/ParentModule'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
     backendServiceArm: 'Sutradhar-Serviceconnection'
     backendAzureRmOverrideSubscriptionID: '6e2d972f-0c29-493d-bc26-2eaa32b9e4b9'
     backendAzureRmResourceGroupName: 'rg-saumya1'
